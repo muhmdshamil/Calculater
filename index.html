@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculter</title>
+     <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="container">
+            <p>CASIO</p>
+             <div class="screen">
+                <input type="text" id="screen">
+             </div>
+             <div class="buttons">
+                 <input type="button" value="7" onclick="screenInput(value)">
+                 <input type="button" value="8"  onclick="screenInput(value)">
+                 <input type="button" value="9" onclick="screenInput(value)">
+                 <input type="button" class="operater" value="/"  onclick="screenInput(value)">
+             </div>
+             <div class="buttons">
+                <input type="button" value="4"  onclick="screenInput(value)">
+                <input type="button" value="5"  onclick="screenInput(value)">
+                <input type="button" value="6"  onclick="screenInput(value)">
+                <input type="button" class="operater"  value="*"  onclick="screenInput(value)">
+            </div>
+          
+            <div class="buttons">
+                <input type="button" value="3"  onclick="screenInput(value)">
+                <input type="button" value="2"  onclick="screenInput(value)">
+                <input type="button" value="1"  onclick="screenInput(value)">
+                <input type="button" class="operater"  value="-"  onclick="screenInput(value)">
+            </div>
+            <div class="buttons">
+                <input type="button" class="clear" value="C" onclick="Clearscreen()">
+                <input type="button" value="0"  onclick="screenInput(value)">
+                <input type="button" class="equal" value="=" onclick="result()">
+                <input type="button" class="operater"  value="+"  onclick="screenInput(value)">
+            </div>
+    </div>
+
+    <!-- Script code is Here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
